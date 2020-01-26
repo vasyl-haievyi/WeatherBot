@@ -1,0 +1,79 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "speak": "",
+  "backgroundImage": "https://adaptivecards.io/content/Mostly%20Cloudy-Background-Dark.jpg",
+  "body": [
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": 65,
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "{CityName}",
+              "spacing": "Large",
+              "size": "Large",
+              "weight": "Lighter",
+              "color": "Accent"
+            },
+            {
+              "type": "TextBlock",
+              "text": "{Date}",
+              "weight": "Bolder",
+              "size": "Large",
+              "color": "Light"
+            },
+            {
+              "type": "TextBlock",
+              "isSubtle": true,
+              "text": "{Humidity}% Humidity",
+              "spacing": "None"
+            },
+            {
+              "type": "TextBlock",
+              "isSubtle": true,
+              "text": "Wind {WindSpeed} meter/sec",
+              "spacing": "None"
+            },
+            {
+              "type": "TextBlock",
+              "text": "{Cloudiness}% of cloudiness",
+              "spacing": "None",
+              "horizontalAlignment": "Left"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": 20,
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "{Description}",
+              "horizontalAlignment": "Center",
+              "height": "stretch",
+              "fontType": "Monospace",
+              "size": "ExtraLarge",
+              "weight": "Bolder",
+              "color": "Light"
+            }
+          ],
+          "selectAction": {
+            "type": "Action.OpenUrl",
+            "title": "View Saturday",
+            "url": "https://www.microsoft.com"
+          }
+        }
+      ]
+    }
+  ]
+}
